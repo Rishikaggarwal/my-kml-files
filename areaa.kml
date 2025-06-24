@@ -1,53 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
-<Document>
-	<name>areaa.kml</name>
-	<StyleMap id="m_ylw-pushpin">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="s_ylw-pushpin">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<LineStyle>
-			<color>ffff0000</color>
-			<width>5</width>
-		</LineStyle>
-	</Style>
-	<Style id="s_ylw-pushpin_hl">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<LineStyle>
-			<color>ffff0000</color>
-			<width>5</width>
-		</LineStyle>
-	</Style>
-	<Placemark>
-		<name>areaa</name>
-		<styleUrl>#m_ylw-pushpin</styleUrl>
-		<LineString>
-			<tessellate>1</tessellate>
-			<coordinates>
-				70.72831159660119,22.31736885798735,0 70.72835141157903,22.32017629097934,0 70.72899521110942,22.32153610881684,0 70.73186834630009,22.32385016416986,0 70.7334368637336,22.32111024759912,0 70.73414993480395,22.32065746123548,0 70.7341869272028,22.31915877901114,0 70.73407780766388,22.31740881902513,0 70.73122495846842,22.31737180651653,0 70.72831159660119,22.31736885798735,0 
-			</coordinates>
-		</LineString>
-		<atom:link rel="app" href="https://www.google.com/earth/about/versions/#earth-pro" title="Google Earth Pro 7.3.6.10201"></atom:link>
-	</Placemark>
-</Document>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>areaa.kml</name>
+    <Style id="zone-style">
+      <LineStyle>
+        <color>ff0000ff</color> <!-- Blue border -->
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>661111ff</color> <!-- Semi-transparent blue fill -->
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+
+    <Placemark>
+      <name>areaa</name>
+      <styleUrl>#zone-style</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              70.72831159660119,22.31736885798735,0 
+              70.72835141157903,22.32017629097934,0 
+              70.72899521110942,22.32153610881684,0 
+              70.73186834630009,22.32385016416986,0 
+              70.7334368637336,22.32111024759912,0 
+              70.73414993480395,22.32065746123548,0 
+              70.7341869272028,22.31915877901114,0 
+              70.73407780766388,22.31740881902513,0 
+              70.73122495846842,22.31737180651653,0 
+              70.72831159660119,22.31736885798735,0 
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+  </Document>
 </kml>

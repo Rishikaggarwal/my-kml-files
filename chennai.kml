@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>chennai.kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff0055</color>
+			<width>2.5</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff0055</color>
+			<width>2.5</width>
+		</LineStyle>
+	</Style>
+	<Placemark>
+		<name>chennai</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						79.8837720817825,13.20941744642939,0 79.88575715837669,13.20654904410707,0 79.89068480944732,13.19746334727915,0 79.89222320928812,13.16492617077944,0 79.89371775943998,13.14099533218632,0 79.90798810080298,13.14150219829235,0 79.9197643355447,13.15539622431589,0 79.9349869307768,13.16929548526029,0 79.95560787101007,13.19085459930684,0 79.97279391085705,13.20379301825205,0 79.99981308062083,13.21243425306558,0 80.02929210448565,13.22059655139738,0 80.01648609005058,13.24881220561722,0 80.03170625145478,13.26652873318204,0 80.05084893875286,13.29574002832616,0 80.03412036742239,13.30768876434607,0 79.95985582095611,13.3190985273272,0 79.89291445914252,13.33482961407813,0 79.8837720817825,13.20941744642939,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+		<atom:link rel="app" href="https://www.google.com/earth/about/versions/#earth-pro" title="Google Earth Pro 7.3.6.10201"></atom:link>
+	</Placemark>
+</Document>
+</kml>
